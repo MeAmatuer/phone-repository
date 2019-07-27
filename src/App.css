@@ -1,0 +1,31 @@
+.add-btn{
+    background-color: #7ab97a;
+    color: oldlace;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    margin: 20px;
+    border: 0px;
+}
+.delete-btn{
+    background-color: rgb(226, 136, 136);
+    color: oldlace;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    margin: 0px 20px 20px 20px;
+    border: 0px;
+}
+.column-heading{
+    display: grid;
+    grid-template-columns: 20% 20% 20% auto;
+    margin-bottom: 10px;
+    color: lightgrey;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+}
+.heading1{
+    padding: 0px 40px 0px 0px;
+}
+.heading2{
+    padding: 0px 0px 0px 40px; 
+}
