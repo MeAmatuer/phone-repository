@@ -3,6 +3,9 @@ import Header from './Header';
 import './App.css';
 
 class App extends Component {
+  deleteHandler(message){
+    alert(message);
+  }
   render(){
     let subscribers = [
       {
@@ -27,15 +30,18 @@ class App extends Component {
         <br/>
           <span className="grid-item">Phone</span>
         </div>
-        {subscribers.map(function (subscriber) {
+        {
+          subscribers.map(subscriber => {
           return <div className="column-heading" key={subscriber.id}>
           <span className="grid-item">{subscriber.name}</span>
         
         <br/>
           <span className="grid-item">{subscriber.phone}</span>
-          <span><button className="delete-btn">Delete</button></span>
+          <span><button className="delete-btn" onClick={this.deleteHandler.bind(this, "Delete Clicked Handler")}>Delete</button></span>
         </div>
-        })}
+        }
+        )
+        }
 
         </div>
       </div>
